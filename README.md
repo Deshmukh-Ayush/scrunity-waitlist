@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Scrunity — Waitlist Page 🚀
 
-## Getting Started
+**Scrunity** is an AI-powered collaborative online whiteboard for quickly sketching hand-drawn diagrams, wireframes, and notes — helping teams brainstorm and turn scattered ideas into clear, workable concepts.
 
-First, run the development server:
+This repository contains the landing / waitlist page for Scrunity where early users can sign up for access and join the waitlist.
+
+---
+
+## ✨ Features
+
+- Clean, responsive waitlist landing page with email capture and confirmation flow
+- Optional referral / campaign tracking support for growth experiments
+- Easy integration points for email providers (Mailchimp, SendGrid, etc.) and analytics
+- Simple and accessible UI built with Next.js
+
+---
+
+## 🛠️ Tech Stack
+
+- Next.js (App Router)
+- TypeScript
+- (Optional) Email provider / backend (Mailchimp, SendGrid, Postgres, etc.)
+
+---
+
+## 🚀 Quick Start (Local)
+
+1. Install dependencies:
+
+```bash
+npm install
+# or
+pnpm install
+# or
+yarn
+```
+
+2. Start dev server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open http://localhost:3000 and edit the page at `app/page.tsx`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> Note: scripts are defined in `package.json`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚙️ Environment
 
-To learn more about Next.js, take a look at the following resources:
+Add any environment variables your waitlist integration needs to a `.env.local` file. Common examples:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `NEXT_PUBLIC_SITE_URL` — your site URL (e.g., `https://scrunity.app`)
+- `MAILCHIMP_API_KEY` — Mailchimp API key (if used)
+- `SENDGRID_API_KEY` — SendGrid API key (if used)
+- `DATABASE_URL` — connection string for persistence (optional)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Keep secrets out of version control.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧪 Testing & Preview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Unit/integration tests: add and run whatever test framework you prefer (Jest, Vitest, React Testing Library).
+- End-to-end: use Playwright or Cypress for flow testing (e.g., email capture & confirmation).
+
+---
+
+## 📦 Deployment
+
+This project is optimized for deployment on Vercel but will work with other Node-compatible hosts. Typical steps:
+
+1. Connect the repository to Vercel (or your host).
+2. Add production environment variables in the hosting dashboard.
+3. Deploy via Git push / GitHub integration.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+- Open an issue to propose changes or report bugs
+- Send a pull request with a clear description and tests where applicable
+
+Please follow standard GitHub flow and add concise commit messages.
+
+---
+
+## 📬 Contact & Support
+
+If you need help or want to collaborate, open an issue or reach out at hello@scrunity.app (placeholder).
+
+---
+
+## ⚖️ License
+
+This project is open-source — add a license file (`LICENSE`) as needed.
+
+
+> _Made with ❤️ for better collaboration and faster brainstorming._
+
