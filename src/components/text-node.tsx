@@ -21,7 +21,7 @@ export function TextUpdaterNode({ data, isConnectable, selected }: NodeProps<Tex
 
   return (
     <div className={`
-      min-w-[150px] shadow-xl rounded-md bg-white border-2 transition-all
+      min-w-37.5 shadow-xl rounded-md bg-white border-2 transition-all
       ${selected ? 'border-blue-500 ring-4 ring-blue-500/20' : 'border-gray-200'}
     `}>
       {/* Target Handle (Top) */}
