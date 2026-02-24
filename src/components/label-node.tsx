@@ -5,9 +5,9 @@ export type LabelNodeType = Node<LabelNodeData, "label">;
 
 export function LabelNode({ data, isConnectable }: NodeProps<LabelNodeType>) {
   return (
-    <div className="px-4 py-2 bg-white/50 backdrop-blur-sm border border-neutral-200 rounded-full shadow-sm">
+    <div className="px-3 py-1 border border-gray-100 bg-white rounded-sm ">
       <Handle type="target" position={Position.Top} isConnectable={isConnectable} className="opacity-0" />
-      <span className="text-xs font-medium text-neutral-600 tracking-tight">
+      <span className="text-xs font-medium text-neutral-900 tracking-tight">
         {data.text}
       </span>
       <Handle type="source" position={Position.Bottom} isConnectable={isConnectable} className="opacity-0" />

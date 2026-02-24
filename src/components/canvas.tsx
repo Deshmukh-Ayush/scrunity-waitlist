@@ -29,7 +29,7 @@ const initialNodes: Node[] = [
     id: 'hero-label', 
     type: 'label', 
     position: { x: 150, y: 100 }, 
-    data: { text: '✨ Brainstorming, upgraded.' } 
+    data: { text: 'Scrunity AI' } 
   },
   { 
     id: 'features-label', 
@@ -65,7 +65,7 @@ export default function Canvas() {
   );
 
   return (
-    <div style={{ width: '100vw', height: '100vh', backgroundColor: '#fafafa' }}>
+    <div style={{ width: '100vw', height: '100vh', backgroundColor: '#0a0a0a' }}>
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -73,14 +73,15 @@ export default function Canvas() {
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
         nodeTypes={nodeTypes}
+        zoomOnScroll={false}
+        panOnDrag={false}
+        selectionOnDrag
         fitView
         proOptions={{ hideAttribution: true }} // Cleans up the UI
       >
         <Background 
           variant={BackgroundVariant.Dots} 
-          gap={24} 
-          size={1.5} 
-          color="#e5e5e5" 
+          color='#525252'
         />
       </ReactFlow>
     </div>
