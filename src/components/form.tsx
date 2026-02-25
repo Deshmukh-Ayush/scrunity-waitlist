@@ -36,7 +36,7 @@ export const Form = () => {
   }, []);
 
   const validateEmail = (email: string) => {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
   };
 
   const handleSubmit = async () => {
@@ -105,7 +105,7 @@ export const Form = () => {
         </div>
       ) : (
         <>
-          <div className="relative mt-4 w-full max-w-xs">
+          <div className="relative mt-4 w-full max-w-full sm:max-w-xs">
             <input
               ref={inputRef}
               type="email"
