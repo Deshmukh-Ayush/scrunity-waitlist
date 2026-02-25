@@ -54,10 +54,18 @@ export const Form = () => {
     setStatus("submitting");
 
     try {
-      await addEmailToWaitlist(email.trim());
+      const trimmedEmail = email.trim();
+      await addEmailToWaitlist(trimmedEmail);
       setStatus("success");
       setEmail("");
       toast.success("You're on the list! We'll notify you when we launch. 🎉");
+
+      // Send confirmation email (fire-and-forget)
+      fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: trimmedEmail }),
+      }).catch((err) => console.error("Failed to send confirmation email:", err));
     } catch (err: unknown) {
       setStatus("idle");
       if (err instanceof Error) {
