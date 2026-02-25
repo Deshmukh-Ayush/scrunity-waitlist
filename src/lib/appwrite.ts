@@ -1,10 +1,14 @@
-import { Client, Databases, ID } from "appwrite";
+import { Client, Account, Databases, ID } from "appwrite";
 
 const client = new Client()
-  .setEndpoint("https://cloud.appwrite.io/v1") // Or your custom endpoint
-  .setProject(process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID!);
+  .setEndpoint("https://syd.cloud.appwrite.io/v1")
+  .setProject("699dc3d500023dfa67ef");
 
-export const databases = new Databases(client);
+const account = new Account(client);
+const databases = new Databases(client);
+
+export { client, account, databases };
+
 export const WAITLIST_DB_ID = process.env.NEXT_PUBLIC_APPWRITE_WAITLIST_DATABASE_ID!;
 export const WAITLIST_COLLECTION_ID = process.env.NEXT_PUBLIC_APPWRITE_WAITLIST_COLLECTION_ID!;
 
