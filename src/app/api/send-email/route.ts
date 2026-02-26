@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: "Scrunity <onboarding@resend.dev>",
+      from: "Scrunity <noreply@scrunity.com>",
       to: email,
       subject: "Welcome to Scrunity Waitlist",
       html: `
