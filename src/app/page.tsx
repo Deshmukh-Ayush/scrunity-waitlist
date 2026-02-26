@@ -13,7 +13,7 @@ export default function Home() {
           <Image src="/logo/scrunity-logo-light.png" alt="Scrunity Logo" width={100} height={100} className="mb-4 w-16 h-16 sm:w-[100px] sm:h-[100px]" />
           <h1 className="text-3xl sm:text-5xl md:text-6xl text-neutral-100">Research your ideas</h1>
           <h1 className="text-3xl sm:text-5xl md:text-6xl text-neutral-100">
-            Like a Pro with Scrunity
+            Like a Pro with Scrunity AI
           </h1>
           <div
             className={`${inter.className} mt-4 text-md sm:text-lg text-neutral-500`}
