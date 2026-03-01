@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
     "@xyflow/react": "^12.10.1",
     "appwrite": "^22.4.1",
     "class-variance-authority": "^0.7.1",

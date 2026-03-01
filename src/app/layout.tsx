@@ -12,6 +12,7 @@ import {
   OG_IMAGE_URL,
   KEYWORDS,
 } from "@/lib/seo";
+import { Analytics } from "@vercel/analytics/next";
 
 const insrif = Instrument_Serif({
   weight: "400",
@@ -78,6 +79,7 @@ export default function RootLayout({
         <JsonLd />
         <PostHogProvider>
           {children}
+          <Analytics />
           <Toaster position="bottom-right" richColors />
         </PostHogProvider>
       </body>
