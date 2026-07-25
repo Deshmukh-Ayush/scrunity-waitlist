@@ -15,23 +15,25 @@ export default function Home() {
             alt="Scrunity — AI research and mind map tool"
             width={100}
             height={100}
-            className="mb-4 w-16 h-16 sm:w-[100px] sm:h-[100px]"
+            className="mb-4 w-16 h-16 sm:w-25 sm:h-25"
             priority
           />
           <h1 className="text-3xl sm:text-5xl md:text-6xl text-neutral-100">
-            Research your ideas like a pro with Scrunity AI
+            Improve your client&apos;s experience
           </h1>
           <p
             className={`${inter.className} mt-4 text-md sm:text-lg text-neutral-500`}
           >
-            Import everything on Scrunity, use AI on top of it, and create
-            mind-maps and flows to boost your research productivity.
+            Contracts, Deliverables, E-Signatures, Payment Tracking, Timelines
+            and more. Join the waitlist to get early access.
           </p>
         </header>
         <Form />
 
         <footer className="mt-12 sm:absolute sm:bottom-4">
-          <p className={`${inter.className} text-neutral-400 text-sm`}>Scrunity © 2026</p>
+          <p className={`${inter.className} text-neutral-400 text-sm`}>
+            Scrunity © 2026
+          </p>
         </footer>
       </Container>
     </div>
